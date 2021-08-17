@@ -1,0 +1,33 @@
+#myForm {
+    margin-top: 40px;
+    border: 1px solid #80bdff;
+    padding: 20px;
+    border-radius: 4px;
+    transition: all ease .5s;
+}
+
+#myForm:hover,
+#myForm:focus{
+    box-shadow: 0 0 6px 0.2rem #bd2130;
+    border: 1px solid transparent;
+}
+
+label, .form-group {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.error{
+    font-style: italic;
+    font-size: 14px;
+    color: red;
+}
+
+h3{
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e1cfcf;
+}
