@@ -1,0 +1,19 @@
+#registrationForm{
+    border: 1px solid red;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+label{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.invalid{
+    color: red;
+    font-weight: bold;
+}
+
+.success{
+    border: 1px solid blue;
+}

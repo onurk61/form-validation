@@ -17,7 +17,7 @@ label, .form-group {
     font-weight: bold;
 }
 
-.error{
+.invalid{
     font-style: italic;
     font-size: 14px;
     color: red;
@@ -30,4 +30,8 @@ h3{
     padding-bottom: 20px;
     margin-bottom: 10px;
     border-bottom: 1px solid #e1cfcf;
+}
+.success{
+    border: 1px solid blue;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }

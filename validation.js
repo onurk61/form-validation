@@ -7,10 +7,14 @@ $(function () {
 
    if($myForm.length) {
        $myForm.validate({
+           errorClass: 'invalid', // hata verdiğindeki class ismi invalid olarak güncelledim. Default "error"
+           validClass: 'success', // hata giderildikten sonra "success" class ismini ekledim.
+           errorElement: "em", // hata mesajını "<em></em>"" olarak yazdıracak
+           wrapper: 'div', // em olarak yazdırılacak mesajın kapsayıcısını li olarak yazdırdım
            rules: {
                userName: {
                    required: true,
-                   noSpace: true
+                   noSpace: true,
                },
                lastName: {
                    required: true,
@@ -81,7 +85,12 @@ $(function () {
                } else {
                    error.insertAfter(element);
                }
-           }
+           },
+           highlight: function(element, errorClass) {
+               $(element).fadeOut(function(){
+                   $(element).fadeIn();
+               })
+          },
        });
    }
 });
